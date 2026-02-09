@@ -1,0 +1,3 @@
+[build]
+  command = ""    # no build needed
+  publish = "."   # or "public" if index.html is in a folder
