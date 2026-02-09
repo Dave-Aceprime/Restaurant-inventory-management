@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ingredient - Restaurant Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🍽️ RestaurantPro</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="add-item.html" class="active">Add Item</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Add New Ingredient</h1>
+        <p class="subtitle">Enter ingredient details to add to your restaurant inventory</p>
+
+        <!-- OPTIONAL: Add a header image for the form page -->
+        <!-- INSTRUCTION: Uncomment and add your image path if desired -->
+        <!-- 
+        <div class="form-header-image">
+            <img src="" alt="Add Ingredient">
+        </div>
+        -->
+
+        <!-- REQUIREMENT: Form with text fields, radio buttons, and checkboxes -->
+        <div class="form-container">
+            <form action="#" method="post" class="inventory-form">
+                
+                <!-- REQUIREMENT: Text Fields -->
+                <div class="form-group">
+                    <label for="ingredient-name">Ingredient Name *</label>
+                    <input type="text" id="ingredient-name" name="ingredient-name" 
+                           placeholder="e.g., Fresh Tomatoes" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-code">Item Code *</label>
+                    <input type="text" id="item-code" name="item-code" 
+                           placeholder="e.g., ING-001" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quantity">Current Quantity *</label>
+                        <input type="number" id="quantity" name="quantity" 
+                               placeholder="0" min="0" step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="unit">Unit of Measurement *</label>
+                        <input type="text" id="unit" name="unit" 
+                               placeholder="e.g., kg, liters, pieces" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="min-stock">Minimum Stock Level *</label>
+                        <input type="number" id="min-stock" name="min-stock" 
+                               placeholder="0" min="0" step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cost">Cost per Unit ($) *</label>
+                        <input type="number" id="cost" name="cost" 
+                               placeholder="0.00" min="0" step="0.01" required>
+                    </div>
+                </div>
+
+                <!-- REQUIREMENT: Radio Buttons (Category Selection) -->
+                <div class="form-group">
+                    <label>Food Category *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="vegetables" checked>
+                            <span>🥬 Vegetables</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="meat">
+                            <span>🥩 Meat</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="seafood">
+                            <span>🐟 Seafood</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="dairy">
+                            <span>🧀 Dairy</span>
+                        </label>
+                    </div>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="spices">
+                            <span>🌶️ Spices</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="oils">
+                            <span>🫒 Oils</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="dry-goods">
+                            <span>🍝 Dry Goods</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="category" value="beverages">
+                            <span>🥤 Beverages</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- REQUIREMENT: Checkboxes (Storage Requirements) -->
+                <div class="form-group">
+                    <label>Storage & Handling Requirements</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="refrigerated">
+                            <span>❄️ Requires Refrigeration</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="frozen">
+                            <span>🧊 Requires Freezing</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="perishable">
+                            <span>⏰ Highly Perishable</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="organic">
+                            <span>🌱 Organic Product</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="allergen">
+                            <span>⚠️ Common Allergen</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="halal">
+                            <span>✅ Halal Certified</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="gluten-free">
+                            <span>🌾 Gluten-Free</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="storage" value="local">
+                            <span>🏡 Locally Sourced</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="supplier">Supplier Name</label>
+                    <input type="text" id="supplier" name="supplier" 
+                           placeholder="Enter supplier name (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" 
+                              placeholder="Any special notes about this ingredient (optional)"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">➕ Add Ingredient</button>
+                    <button type="reset" class="btn btn-secondary">🔄 Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RestaurantPro Inventory System | Academic Project</p>
+    </footer>
+</body>
+</html>

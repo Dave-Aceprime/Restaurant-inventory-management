@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REQUIREMENT: Proper title tag -->
+    <title>Dashboard - Restaurant Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><body class="dashboard-page">
+    <!-- Rest of your code stays the same -->
+    <!-- REQUIREMENT: Consistent navigation on all pages with links to all 5 pages -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🍽️ RestaurantPro</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="add-item.html">Add Item</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- DASHBOARD HERO WITH 5PX BLUR BACKGROUND -->
+        <!-- REQUIREMENT: Headings h1-h3 are inside the hero overlay -->
+        <div class="dashboard-hero">
+            <div class="hero-overlay">
+                <h1>Restaurant Dashboard</h1>
+                <p class="subtitle">Real-time inventory overview for your restaurant</p>
+            </div>
+        </div>
+
+        <!-- Dashboard Statistics Cards -->
+        <div class="stats-grid">
+            <div class="stat-card stat-green">
+                <div class="stat-icon">📦</div>
+                <h3>Total Ingredients</h3>
+                <p class="stat-number">342</p>
+                <span class="stat-label">Items in Stock</span>
+            </div>
+            <div class="stat-card stat-orange">
+                <div class="stat-icon">⚠️</div>
+                <h3>Low Stock</h3>
+                <p class="stat-number">18</p>
+                <span class="stat-label">Need Reorder</span>
+            </div>
+            <div class="stat-card stat-blue">
+                <div class="stat-icon">🏷️</div>
+                <h3>Categories</h3>
+                <p class="stat-number">12</p>
+                <span class="stat-label">Food Groups</span>
+            </div>
+            <div class="stat-card stat-red">
+                <div class="stat-icon">❌</div>
+                <h3>Out of Stock</h3>
+                <p class="stat-number">5</p>
+                <span class="stat-label">Critical Items</span>
+            </div>
+        </div>
+
+        <!-- REQUIREMENT: Table with invisible borders for layout -->
+        <!-- This table organizes Quick Actions without visible borders -->
+        <h2>Quick Actions</h2>
+        <table class="layout-table">
+            <tr>
+                <td>
+                    <!-- REQUIREMENT: Rollover image (CSS :hover image change) -->
+                    <!-- INSTRUCTION: Replace src="" with your image path -->
+                    <!-- Example: src="images/add-icon.png" -->
+                    <div class="action-card">
+                        <img src="images\ingredients.png" 
+                             alt="Add Ingredient" 
+                             class="rollover-image">
+                        <h3>Add Ingredient</h3>
+                        <p>Add new items to your inventory</p>
+                    </div>
+                </td>
+                <td>
+                    <!-- REQUIREMENT: Hyperlinked image -->
+                    <!-- INSTRUCTION: Replace src="" with your image path -->
+                    <!-- Example: src="images/view-icon.png" -->
+                    <div class="action-card">
+                        <a href="inventory.html">
+                            <img src="images\inventory-icon.png" 
+                                 alt="View Inventory">
+                        </a>
+                        <h3>View Inventory</h3>
+                        <p>Browse all ingredients</p>
+                    </div>
+                </td>
+                <td>
+                    <!-- INSTRUCTION: Replace src="" with your image path (optional third action) -->
+                    <!-- Example: src="images/report-icon.png" -->
+                    <div class="action-card">
+                        <img src="images\report-icon.png"
+                             alt="Reports">
+                        <h3>Stock Reports</h3>
+                        <p>View analytics & reports</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Recent Activity Section -->
+        <h2>Recent Activity</h2>
+        <div class="activity-list">
+            <div class="activity-item">
+                <span class="activity-icon green">✓</span>
+                <div class="activity-content">
+                    <p><strong>Fresh Tomatoes</strong> - Stock updated to 25 kg</p>
+                    <span class="activity-time">1 hour ago</span>
+                </div>
+            </div>
+            <div class="activity-item">
+                <span class="activity-icon orange">⚠</span>
+                <div class="activity-content">
+                    <p><strong>Olive Oil</strong> - Low stock alert (2 liters remaining)</p>
+                    <span class="activity-time">3 hours ago</span>
+                </div>
+            </div>
+            <div class="activity-item">
+                <span class="activity-icon blue">+</span>
+                <div class="activity-content">
+                    <p><strong>Parmesan Cheese</strong> - New item added to inventory</p>
+                    <span class="activity-time">5 hours ago</span>
+                </div>
+            </div>
+            <div class="activity-item">
+                <span class="activity-icon red">❌</span>
+                <div class="activity-content">
+                    <p><strong>Fresh Basil</strong> - Out of stock alert</p>
+                    <span class="activity-time">1 day ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RestaurantPro Inventory System | Academic Project</p>
+    </footer>
+</body>
+</html>

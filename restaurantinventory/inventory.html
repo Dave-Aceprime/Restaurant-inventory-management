@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory List - Restaurant Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🍽️ RestaurantPro</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="inventory.html" class="active">Inventory</a></li>
+                <li><a href="add-item.html">Add Item</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Restaurant Inventory</h1>
+        <p class="subtitle">Complete list of all ingredients and supplies</p>
+
+        <!-- REQUIREMENT: Image with CSS box model and positioning -->
+        <!-- INSTRUCTION: Replace src="" with your inventory header image path -->
+        <div class="inventory-header">
+            <img src="images\inventory-header.jpg" 
+                 alt="Food Inventory Icon" 
+                 class="positioned-image">
+            <div class="header-text">
+                <h2>Current Stock Overview</h2>
+                <p>Last updated: January 29, 2024 - 2:30 PM</p>
+                <p class="inventory-summary">342 items across 12 categories</p>
+            </div>
+        </div>
+
+        <!-- REQUIREMENT: Table with visible borders showing inventory items -->
+        <h2>Ingredients List</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Item Code</th>
+                    <th>Ingredient Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Min. Stock</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ING-001</td>
+                    <td>Fresh Tomatoes</td>
+                    <td>Vegetables</td>
+                    <td>25</td>
+                    <td>kg</td>
+                    <td>10 kg</td>
+                    <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-002</td>
+                    <td>Olive Oil</td>
+                    <td>Oils</td>
+                    <td>2</td>
+                    <td>liters</td>
+                    <td>5 L</td>
+                    <td><span class="badge badge-warning">Low Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-003</td>
+                    <td>Chicken Breast</td>
+                    <td>Meat</td>
+                    <td>45</td>
+                    <td>kg</td>
+                    <td>20 kg</td>
+                    <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-004</td>
+                    <td>Fresh Basil</td>
+                    <td>Herbs</td>
+                    <td>0</td>
+                    <td>bunches</td>
+                    <td>5 bunches</td>
+                    <td><span class="badge badge-danger">Out of Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-005</td>
+                    <td>Mozzarella Cheese</td>
+                    <td>Dairy</td>
+                    <td>15</td>
+                    <td>kg</td>
+                    <td>8 kg</td>
+                    <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-006</td>
+                    <td>Pasta Spaghetti</td>
+                    <td>Dry Goods</td>
+                    <td>50</td>
+                    <td>kg</td>
+                    <td>30 kg</td>
+                    <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-007</td>
+                    <td>Garlic Cloves</td>
+                    <td>Vegetables</td>
+                    <td>3</td>
+                    <td>kg</td>
+                    <td>2 kg</td>
+                    <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-008</td>
+                    <td>Heavy Cream</td>
+                    <td>Dairy</td>
+                    <td>1</td>
+                    <td>liters</td>
+                    <td>4 L</td>
+                    <td><span class="badge badge-warning">Low Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-009</td>
+                    <td>Black Pepper</td>
+                    <td>Spices</td>
+                    <td>500</td>
+                    <td>grams</td>
+                    <td>200 g</td>
+                    <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>ING-010</td>
+                    <td>Salmon Fillet</td>
+                    <td>Seafood</td>
+                    <td>8</td>
+                    <td>kg</td>
+                    <td>10 kg</td>
+                    <td><span class="badge badge-warning">Low Stock</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- REQUIREMENT: Absolute link to external site -->
+        <div class="external-link-section">
+            <p>📦 Need to order more ingredients? 
+                <a href="https://www.google.com" target="_blank" class="external-link">
+                    Search Food Suppliers on Google →
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RestaurantPro Inventory System | Academic Project</p>
+    </footer>
+</body>
+</html>
